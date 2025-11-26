@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import myPhoto from './assets/Graduation-pic.jpg'
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <section id="home" style={{ marginBottom: "50px" }}>
         <h1>Hello, I’m Akhil!</h1>
         <p>Welcome to my life</p>
-        <img src="/src/assets/Graduation-pic.jpg" alt="Profile" style={{ width: "300px", borderRadius: "75px" }} />
+      <img src={myPhoto} alt="Profile" style={{ width: "300px", borderRadius: "75px" }} />
       </section>
 
       {/* --- About Section --- */}
