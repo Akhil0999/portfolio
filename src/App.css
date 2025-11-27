@@ -40,3 +40,28 @@
 .read-the-docs {
   color: #888;
 }
+
+/* For picture scroll bar (Photo-row) */
+.photo-row {
+  display: flex;
+  gap: 12px;              /* space between images */
+  overflow-x: auto;       /* enables horizontal scrolling */
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.photo-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.photo-row::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+.photo-row img {
+  width: 200px;           /* adjust size as needed */
+  height: 200px;
+  object-fit: cover;      /* keeps images neat */
+  border-radius: 12px;    /* modern rounded style */
+}
