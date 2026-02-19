@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar';
+
 import myPhoto1 from './assets/Graduation-pic.jpg'
 import myPhoto2 from './assets/study.jpg'
 import myPhoto3 from './assets/skate.jpg'
@@ -18,7 +20,8 @@ import Contact from './components/Contact';
 function App() {
   return (
 
-    <div className="container" style={{ fontFamily: "sans-serif", padding: "20px" }}>
+    <div className="container">
+      <Navbar/>
       <Home />
       <About />
       <Academics />
