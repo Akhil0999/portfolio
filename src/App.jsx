@@ -2,13 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from './components/Navbar';
+// import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
-import myPhoto1 from './assets/Graduation-pic.jpg'
-import myPhoto2 from './assets/study.jpg'
-import myPhoto3 from './assets/skate.jpg'
-import myPhoto4 from './assets/drawing.jpg'
-import myPhoto5 from './assets/biking.jpg'
+import Navbar from './components/Navbar';
 
 import Home from './components/Home';
 import About from './components/About';
@@ -18,16 +15,20 @@ import Contact from './components/Contact';
 
 
 function App() {
-  return (
-
-    <div className="container">
-      <Navbar/>
-      <Home />
-      <About />
-      <Academics />
-      <Projects />
-      <Contact />
-    </div>
+   return (
+    <>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/academics" element={<Academics />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </>
 
     // <div style={{ fontFamily: "sans-serif", padding: "20px" }}>
     //   {/* --- Home Section --- */}
