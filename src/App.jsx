@@ -52,6 +52,7 @@ function App() {
           <li>CMCS - Claim management system with clean UI and asynchronous processes</li>
           <li>Municipal Service App - Uses various data structures, like trees and linked lists, to analyze service data & gain awareness around events</li>
           <li>Payment Gateway - Worked with a team to employ cybersecurity techniques, like SSL, bycrypt, XSS, Jason Web Tokens & rate limiting</li>
+          <li>Flyte - An social android application that works with real time DB and was made for bird watchers to record their experiences</li>
         </ul>
       </section>
 
@@ -73,7 +74,7 @@ function App() {
         <p>
           B.Tech in Computer Science and Engineering from Varsity CollegE, Durban North (2024).
           <br/>
-          Currently working on Honors in Computer Science at Richfield Graduate Institute of Technology, Durban (2025).
+          Honors in Bachelor of Science in IT at Richfield Graduate Institute of Technology, Durban (2025).
         </p>
       </section>
 
