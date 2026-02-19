@@ -45,6 +45,16 @@ function App() {
         </p>
       </section>
 
+      {/* --- Certifications --- */}
+      <section id="stories" style={{ marginBottom: "50px" }}>
+        <h2>Academics</h2>
+        <p>
+          B.Tech in Computer Science and Engineering from Varsity CollegE, Durban North (2024).
+          <br/>
+          Honors in Bachelor of Science in IT at Richfield Graduate Institute of Technology, Durban (2025).
+        </p>
+      </section>
+
       {/* --- Projects Section --- */}
       <section id="projects" style={{ marginBottom: "50px" }}>
         <h2>Projects</h2>
@@ -52,13 +62,13 @@ function App() {
           <li>CMCS - Claim management system with clean UI and asynchronous processes</li>
           <li>Municipal Service App - Uses various data structures, like trees and linked lists, to analyze service data & gain awareness around events</li>
           <li>Payment Gateway - Worked with a team to employ cybersecurity techniques, like SSL, bycrypt, XSS, Jason Web Tokens & rate limiting</li>
-          <li>Flyte - An social android application that works with real time DB and was made for bird watchers to record their experiences</li>
+          <li>Flyte - A social android application that works with real time DB and was made for bird watchers to record their experiences</li>
         </ul>
       </section>
 
       {/* --- Stories / Media Section --- */}
       <section id="stories" style={{ marginBottom: "50px" }}>
-        <h2>Stories</h2>
+        <h2>Quotably Yours</h2>
         <p>
           Curiosity killed the cat, but it made me who I am today. If I 
           had any advice for somebody trying to make their dreams come true
@@ -68,15 +78,6 @@ function App() {
         </p>
       </section>
 
-       {/* --- Certifications --- */}
-      <section id="stories" style={{ marginBottom: "50px" }}>
-        <h2>Academics</h2>
-        <p>
-          B.Tech in Computer Science and Engineering from Varsity CollegE, Durban North (2024).
-          <br/>
-          Honors in Bachelor of Science in IT at Richfield Graduate Institute of Technology, Durban (2025).
-        </p>
-      </section>
 
       {/* --- Contact Section --- */}
       <section id="contact" style={{ marginBottom: "50px" }}>
