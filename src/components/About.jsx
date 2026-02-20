@@ -12,7 +12,7 @@ function About() {
 
       <p>
         I’m a software developer with a passion for creating projects and
-        solving problems. I enjoy learning frameworks (I think there's a framework for everything in life), designing UI/UX, and
+        solving problems. I enjoy learning new frameworks (I beleive there's a framework for almost everything in life), designing UI/UX, and
         building practical solutions. Problem solving is my forte, and I thrive
         in collaborative environments where I can contribute my skills and
         learn from others.
@@ -27,23 +27,53 @@ function About() {
         <img src={myPhoto5} alt="Biking" />
       </div>
 
-      <p>
-        When I’m not coding, I love to read, game, draw, L2M, explore new technologies, and skateboard. 
-        I do non-profit work as a skate coach (placing 2nd in my first competition at 14 years old) as it is a great way to give back to the community, and relieve stress in a healthy way,
-        while keeping the youth out of trouble and facilitating positivity. I'm also learning how to play the guitar and ride a motorbike!
-        I come from a small town in Durban called Phoenix,
-        and I am determined to show people that your environment does not define you. I beleive that everybody 
-        has the potential to achieve greatness with the right mindset and dedication.
-      </p>
+<h3 className="about-subheading">Beyond Code</h3>
 
-      <h2>Quotably Yours</h2>
-        <p>
-          Curiosity killed the cat, but it made me who I am today. If I 
-          had any advice for somebody trying to make their dreams come true
-          it would be to commit yourself, keep learning, adapting and NEVER GIVE UP!
-          <br/>
-          “The future belongs to those who believe in the beauty of their dreams.” – Eleanor Roosevelt 
-        </p>
+<div className="about-grid">
+  <div>
+    <h4>Creative & Curious</h4>
+    <p>
+      I enjoy reading, gaming, drawing, exploring emerging technologies,
+      and constantly learning new skills — including guitar and motorbike riding.
+    </p>
+  </div>
+
+  <div>
+    <h4>Skateboarding & Community</h4>
+    <p>
+      As a non-profit skate coach, I use skateboarding as a way to give back,
+      mentor youth, and promote positivity. I placed 2nd in my first competition
+      at 14 — and the discipline I learned still shapes who I am today.
+    </p>
+  </div>
+
+  <div>
+    <h4>Mindset</h4>
+    <p>
+      I come from a small town in Durban called Phoenix, and I strongly believe
+      that your environment does not define your future. With the right mindset,
+      discipline, and dedication — growth is inevitable.
+    </p>
+  </div>
+</div>
+
+<div className="quote-section">
+  <h2 className="about-subheading">Quotably Yours</h2>
+
+  <blockquote className="quote-card">
+    <p className="quote-main">
+      “Curiosity may have killed the cat, but it made me who I am today.”
+    </p>
+
+    <p className="quote-advice">
+      Commit yourself. Keep learning. Keep adapting. Never give up.
+    </p>
+
+    <footer className="quote-footer">
+      Remember that life is exactly what YOU think it is. Your mindset is the most powerful tool you have — use it wisely.
+    </footer>
+  </blockquote>
+</div>
 
     </section>
   );
