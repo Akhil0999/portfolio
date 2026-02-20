@@ -57,6 +57,9 @@ button:focus-visible {
 .container {
   font-family: sans-serif;
   padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 @media (prefers-color-scheme: light) {
@@ -106,6 +109,8 @@ button:focus-visible {
 .nav-links a:hover {
   color: #38bdf8;
 }
+
+
 
 html {
   scroll-behavior: smooth;
