@@ -1,12 +1,27 @@
+import myPhoto1 from '../assets/degree-pic.jpg';
+
 function Academics() {
   return (
     <section id="academics" className="section">
       <h2>Academics</h2>
-         <p>
-           B.Tech in Computer Science and Engineering from Varsity CollegE, Durban North (2024).
-           <br/>
+
+      <div className="academics-content">
+        <p>
+           B.Tech in Computer Science and Engineering from Varsity College, Durban North (2024).
+        </p>
+          <img 
+            src={myPhoto1} 
+            alt="Degree Certificate" 
+            className="academics-image"
+          />
+
+        <p>
            Honors in Bachelor of Science in IT at Richfield Graduate Institute of Technology, Durban (2025).
-         </p>
+          <br/>
+          (Picture pending)
+        </p>
+      </div>
+         
     </section>
   );
 }

@@ -1,7 +1,9 @@
+import myPhoto1 from '../assets/travel-pic.jpg';
 import myPhoto2 from '../assets/study.jpg';
 import myPhoto3 from '../assets/skate.jpg';
 import myPhoto4 from '../assets/drawing.jpg';
 import myPhoto5 from '../assets/biking.jpg';
+import myPhoto6 from '../assets/face.jpg';
 
 function About() {
   return (
@@ -18,8 +20,10 @@ function About() {
 
       <div className="photo-row">
         <img src={myPhoto2} alt="Study" />
+        <img src={myPhoto1} alt="Travel" />
         <img src={myPhoto3} alt="Skate" />
         <img src={myPhoto4} alt="Drawing" />
+        <img src={myPhoto6} alt="Face" />
         <img src={myPhoto5} alt="Biking" />
       </div>
 
