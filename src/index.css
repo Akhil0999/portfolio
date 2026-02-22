@@ -221,3 +221,27 @@ html {
     background-color: #f9f9f9;
   }
 }
+
+/* Default (Desktop) */
+.profile-image {
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/* Mobile Only */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  #home {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+}
