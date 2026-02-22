@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 // function Navbar() {
 //   return (
@@ -19,16 +20,24 @@ import { Link } from 'react-router-dom';
 // export default Navbar;
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="navbar">
       <div className="nav-logo">Akhil  </div>
 
-      <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/academics">Academics</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+      <div 
+        className="hamburger" 
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </div>
+
+      <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+        <Link to="/academics" onClick={() => setMenuOpen(false)}>Academics</Link>
+        <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
+        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>
     </nav>
   );
