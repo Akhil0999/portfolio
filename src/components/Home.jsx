@@ -2,7 +2,7 @@ import myPhoto1 from '../assets/Graduation-pic.jpg';
 
 function Home() {
   return (
-    <section id="home" className="section">
+    <section id="home" className="section theme-blue">
       <h1>Hello, I’m Akhil!</h1>
       <p>Welcome to my life</p>
       <img 

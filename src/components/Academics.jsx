@@ -2,7 +2,7 @@ import myPhoto1 from '../assets/degree-pic.jpg';
 
 function Academics() {
   return (
-    <section id="academics" className="section">
+    <section id="academics" className="section theme-red">
       <h2>Academics</h2>
 
       <div className="academics-content">

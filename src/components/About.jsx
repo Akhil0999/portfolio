@@ -7,7 +7,7 @@ import myPhoto6 from '../assets/face.jpg';
 
 function About() {
   return (
-    <section id="about" className="section">
+    <section id="about" className="section theme-blue-red">
       <h2>About Me</h2>
 
       <p>
