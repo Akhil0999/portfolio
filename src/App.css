@@ -42,13 +42,6 @@
 }
 
 /* For picture scroll bar (Photo-row) */
-.photo-row {
-  display: flex;
-  gap: 12px;              /* space between images */
-  overflow-x: auto;       /* enables horizontal scrolling */
-  padding-bottom: 10px;
-  scroll-behavior: smooth;
-}
 
 .photo-row::-webkit-scrollbar {
   height: 8px;
@@ -59,9 +52,30 @@
   border-radius: 10px;
 }
 
+.photo-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  overflow-x: auto;     /* enables horizontal scrolling */
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1.5rem;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+}
 .photo-row img {
-  width: 200px;           /* adjust size as needed */
+  width: 200px;
   height: 200px;
-  object-fit: cover;      /* keeps images neat */
-  border-radius: 12px;    /* modern rounded style */
+  object-fit: cover;
+  border-radius: 12px;
+  flex: 0 0 200px;
+  scroll-snap-align: center;        
+}
+.photo-row img:hover {
+  transform: scale(1.05);
+  transition: transform 0.25s ease;
+}
+.photo-row:active {
+  cursor: grabbing;
 }
